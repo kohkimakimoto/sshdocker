@@ -1,0 +1,6 @@
+addr: 0.0.0.0:2222
+
+runtimes:
+  jq:
+    image: jq
+    

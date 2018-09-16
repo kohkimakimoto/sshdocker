@@ -1,0 +1,24 @@
+addr: 0.0.0.0:2222
+# host_key_file: /etc/ssh/ssh_host_rsa_key
+debug: false
+public_key_authentication: false
+#authorized_keys:
+#  - "ssh-rsa XXXXXXXXXXXXXXXXXXX..."
+
+runtimes:
+  example:
+    image: centos:centos7
+    command: [ "/bin/bash" ]
+
+#  example2:
+#    container:
+#      image: centos:centos7
+#      options: [ "--privileged" ]
+#      command: [ "/sbin/init" ]
+#    command: [ "/bin/bash" ]
+
+#  _fallback:
+#    image: ${SSHDOCKER_SSH_USER}
+
+
+

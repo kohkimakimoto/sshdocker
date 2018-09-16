@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+.tags*
+._*
+*.iml
+/vendor
+.vagrant
+.vscode/
+/_work
+/tmp
+/sshdocker.yml
+.go-packages/
+
+/build/outputs/*
+
+!.gitkeep

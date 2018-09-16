@@ -1,0 +1,24 @@
+[Unit]
+Description=sshdocker
+Documentation=https://github.com/kohkimakimoto/sshdocker
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+WorkingDirectory=/
+User=root
+Group=root
+EnvironmentFile=-/etc/sysconfig/sshdocker
+ExecStart=/usr/bin/sshdocker $SSHDOCKER_OPTS
+StandardOutput=journal
+StandardError=inherit
+
+# Disable timeout logic and wait until process is stopped
+TimeoutStopSec=0
+
+KillSignal=SIGTERM
+SendSIGKILL=no
+SuccessExitStatus=0
+
+[Install]
+WantedBy=multi-user.target

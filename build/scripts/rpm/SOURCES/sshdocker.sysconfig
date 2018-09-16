@@ -1,0 +1,1 @@
+SSHDOCKER_OPTS="--config-file=/etc/sshdocker.yml"
